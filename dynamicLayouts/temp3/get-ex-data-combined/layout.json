@@ -1,0 +1,50 @@
+{
+  "layoutTypes": {
+    "Exchange_Value_service": {
+      "kind": "operationRef",
+      "serviceId": "Exchange_Value_service",
+      "operations": [
+        "getTemp3GetExDataCombined"
+      ]
+    }
+  },
+  "layouts": {
+    "isDefault": {
+      "description": "Default Rule",
+      "type": "Exchange_Value_service",
+      "expression": "[[ 'isDefault' ]]"
+    },
+    "exDataValues": {
+      "type": "Exchange_Value_service",
+      "layoutType": "table",
+      "label": "ExDataValues",
+      "editForm": "CCA",
+      "rules": [
+        "isDefault"
+      ],
+      "layouts": {
+        "default": {
+          "layoutType": "table",
+          "layout": {
+            "displayProperties": []
+          }
+        },
+        "isDefault": {
+          "layoutType": "table",
+          "type": "Exchange_Value_service",
+          "label": "",
+          "description": "",
+          "layout": {
+            "displayProperties": []
+          }
+        }
+      },
+      "@dt": {
+        "metadataRuleOptions": {
+          "exclude": true
+        }
+      }
+    }
+  },
+  "templates": {}
+}

@@ -4,14 +4,19 @@
       "version": "17.1.4",
       "components": {
         "container": "17.1.4",
-        "bind-field": "17.1.4",
+        "form": "17.1.4",
         "bind-section": "17.1.4",
-        "form": "17.1.4"
+        "bind-field": "17.1.4"
       }
     },
     "oj-dynamic": {
       "version": "17.1.4",
       "components": {
+        "shared": "17.1.4",
+        "form": "17.1.4",
+        "utils": "17.1.4",
+        "bind-field": "17.1.4",
+        "providers": "17.1.4",
         "table": "17.1.4"
       }
     }

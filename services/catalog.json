@@ -1,0 +1,32 @@
+{
+    "backends": {
+    "awsExValueEnd": {
+      "servers": [
+        {
+          "url": "https://popzgl5p92.execute-api.us-east-1.amazonaws.com",
+          "description": "Temp1",
+          "x-vb": {
+            "forceProxy": "cors"
+          }
+        }
+      ]
+    },
+    "ApexCloudDataBackend": {
+      "description": "Apex Cloud",
+      "servers": [
+        {
+          "url": "https://apex.oracle.com/pls/apex/apexcloudrestservice",
+          "description": "Pls Apex",
+          "x-vb": {
+            "authentication": {
+              "authenticated": {
+                "type": "cloud"
+              }
+            }
+          }
+        }
+      ],
+      "headers": {}
+    }
+      }
+}

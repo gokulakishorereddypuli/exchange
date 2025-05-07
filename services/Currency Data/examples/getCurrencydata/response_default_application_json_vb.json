@@ -1,0 +1,305 @@
+{
+    "items": [
+        {
+            "name": "United Arab Emirates Dirham",
+            "value": 3.67304,
+            "code": "AED",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AED"
+                }
+            ]
+        },
+        {
+            "name": "Afghan Afghani",
+            "value": 70.68582,
+            "code": "AFN",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AFN"
+                }
+            ]
+        },
+        {
+            "name": "Albanian Lek",
+            "value": 86.62352,
+            "code": "ALL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/ALL"
+                }
+            ]
+        },
+        {
+            "name": "Armenian Dram",
+            "value": 387.24903,
+            "code": "AMD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AMD"
+                }
+            ]
+        },
+        {
+            "name": "Dutch Guilders",
+            "value": 1.724,
+            "code": "ANG",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/ANG"
+                }
+            ]
+        },
+        {
+            "name": "Angolan Kwanza",
+            "value": 907.00136,
+            "code": "AOA",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AOA"
+                }
+            ]
+        },
+        {
+            "name": "Argentine Peso",
+            "value": 1162.10272,
+            "code": "ARS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/ARS"
+                }
+            ]
+        },
+        {
+            "name": "Australian Dollar",
+            "value": 1.55796,
+            "code": "AUD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AUD"
+                }
+            ]
+        },
+        {
+            "name": "Aruban Florin",
+            "value": 1.80081,
+            "code": "AWG",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AWG"
+                }
+            ]
+        },
+        {
+            "name": "Azerbaijani Manat",
+            "value": 1.68824,
+            "code": "AZN",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/AZN"
+                }
+            ]
+        },
+        {
+            "name": "Bosnia-Herzegovina Convertible Mark",
+            "value": 1.71312,
+            "code": "BAM",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BAM"
+                }
+            ]
+        },
+        {
+            "name": "Barbadian Dollar",
+            "value": 1.9994,
+            "code": "BBD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BBD"
+                }
+            ]
+        },
+        {
+            "name": "Bangladeshi Taka",
+            "value": 121.2121,
+            "code": "BDT",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BDT"
+                }
+            ]
+        },
+        {
+            "name": "Bulgarian Lev",
+            "value": 1.7181,
+            "code": "BGN",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BGN"
+                }
+            ]
+        },
+        {
+            "name": "Bahraini Dinar",
+            "value": 0.37586,
+            "code": "BHD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BHD"
+                }
+            ]
+        },
+        {
+            "name": "Burundian Franc",
+            "value": 2932.38699,
+            "code": "BIF",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BIF"
+                }
+            ]
+        },
+        {
+            "name": "Bermudian Dollar",
+            "value": 0.99925,
+            "code": "BMD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BMD"
+                }
+            ]
+        },
+        {
+            "name": "Bruneian Dollar",
+            "value": 1.30915,
+            "code": "BND",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BND"
+                }
+            ]
+        },
+        {
+            "name": "Bolivian Boliviano",
+            "value": 6.88839,
+            "code": "BOB",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BOB"
+                }
+            ]
+        },
+        {
+            "name": "Brazilian Real",
+            "value": 5.67863,
+            "code": "BRL",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BRL"
+                }
+            ]
+        },
+        {
+            "name": "Bahamian Dollar",
+            "value": 0.9964,
+            "code": "BSD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BSD"
+                }
+            ]
+        },
+        {
+            "name": "Bhutanese Ngultrum",
+            "value": 79.41714,
+            "code": "BTN",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BTN"
+                }
+            ]
+        },
+        {
+            "name": "Botswanan Pula",
+            "value": 13.6026,
+            "code": "BWP",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BWP"
+                }
+            ]
+        },
+        {
+            "name": "Belizean Dollar",
+            "value": 2.00649,
+            "code": "BZD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/BZD"
+                }
+            ]
+        },
+        {
+            "name": "Canadian Dollar",
+            "value": 1.38477,
+            "code": "CAD",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/CAD"
+                }
+            ]
+        }
+    ],
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/"
+        },
+        {
+            "rel": "edit",
+            "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/metadata-catalog/currencydata/"
+        },
+        {
+            "rel": "first",
+            "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/"
+        },
+        {
+            "rel": "next",
+            "href": "https://apex.oracle.com/pls/apex/apexcloudrestservice/currencydata/?offset=25"
+        }
+    ]
+}

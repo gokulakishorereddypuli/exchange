@@ -1,0 +1,99 @@
+<div class="oj-flex">
+  <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-5 rainbow-heading" id="heading"><oj-bind-text value="[[$application.translations.app.heading__text]]"></oj-bind-text>
+    <div class="oj-flex">
+      <span class="oj-badge oj-badge-danger oj-flex-item oj-sm-flex-initial">€</span>
+      <span class="oj-badge oj-badge-info oj-flex-item oj-sm-flex-initial">$
+      </span>
+      <span class="oj-badge oj-flex-item oj-sm-flex-initial">¥</span>
+      <span class="oj-badge oj-badge-danger oj-flex-item oj-sm-flex-initial">C$</span>
+      <span class="oj-badge oj-badge-info oj-flex-item oj-sm-flex-initial">S$</span>
+    </div>
+  </h6>
+</div>
+<div class="oj-flex oj-applayout-content">
+  <oj-label class="oj-flex-item oj-sm-12 oj-md-3">From</oj-label>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-ms-6 oj-flex oj-sm-align-self-flex-end">
+    <oj-combobox-one label-hint="Currency (From)" class="oj-flex-item oj-sm-12 oj-md-3" options-keys.label="name"
+      on-value-changed="[[$listeners.comboValue]]" required="true" maximum-result-count="500"
+      options="[[$variables.getCurrencydataListSDP2]]"></oj-combobox-one>
+    <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+    <oj-input-number class="oj-flex-item oj-sm-12 oj-md-3" value="{{ $variables.fromValue }}"
+      on-value-changed="[[$listeners.inputNumberValue]]"></oj-input-number>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-label class="oj-flex-item oj-sm-12 oj-md-3">To</oj-label>
+</div>
+<div class="oj-flex">
+  <oj-combobox-one label-hint="Currency (To)" class="oj-flex-item oj-sm-12 oj-md-3" options-keys.label="name"
+    on-value-changed="[[$listeners.comboValue2]]" maximum-result-count="500"
+    options="[[$variables.getCurrencydataListSDP3]]"></oj-combobox-one>
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <oj-input-number class="oj-flex-item oj-sm-12 oj-md-3" value="{{ $variables.toValue }}"
+    on-value-changed="[[$listeners.inputNumberValue2]]"></oj-input-number>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <oj-accordion class="oj-flex-item oj-sm-12 oj-md-3">
+  </oj-accordion>
+</div>
+<div class="oj-flex">
+  <oj-collapsible class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-chart class="oj-sm-flex-initial" y-axis.title="Currency Value" x-axis.title="Country" legend.rendered="on"
+      animation-on-data-change="auto" animation-on-display="alphaFade" style-defaults.marker-displayed="on"
+      legend.title="Curency Value Based on 1USD" legend.position="top" initial-zooming="last"
+      data="[[$variables.getCurrencydataListSDP5]]">
+      <template slot="itemTemplate">
+        <oj-chart-item value="[[ $current.data.value ]]" group-id="[[[ $current.data.code ]]]" series-id="Undefined"></oj-chart-item>
+      </template>
+    </oj-chart>
+    <oj-label slot="header">Current Currency Value</oj-label>
+  </oj-collapsible>
+</div>
+<div class="oj-flex">
+  <oj-tab-bar edge="top" id="oj-tab-bar--827849815-1" selection="{{$variables.ojTabBar8278498151SelectedItem}}"
+    class="oj-flex-item oj-sm-12 oj-md-4">
+    <ul>
+      <li id="oj-tab-bar--827849815-1-tab-1">
+        <a href="#" id="oj-tab-bar--827849815-1-tab-1-tab" aria-controls="oj-tab-bar--827849815-1-tab-1-panel"
+          target="_blank">Currency List</a>
+      </li>
+      <li id="oj-tab-bar--827849815-1-tab-2">
+        <a href="#" id="oj-tab-bar--827849815-1-tab-2-tab" aria-controls="oj-tab-bar--827849815-1-tab-2-panel">Graph</a>
+      </li>
+    </ul>
+  </oj-tab-bar>
+</div>
+<div class="oj-flex">
+  <oj-popup class="oj-flex-item oj-sm-12 oj-md-1"></oj-popup>
+  <oj-switcher value="[[$variables.ojTabBar8278498151SelectedItem]]" id="oj-switcher--827849815-1"
+    class="oj-flex-item oj-sm-12 oj-md-11">
+    <div slot="oj-tab-bar--827849815-1-tab-1" id="oj-tab-bar--827849815-1-tab-1-panel"
+      aria-labelledby="oj-tab-bar--827849815-1-tab-1-tab" role="tabpanel">
+      <div class="oj-flex">
+        <oj-table class="oj-flex-item oj-sm-12 oj-md-12 oj-table-data-cell-padding"
+          columns='[{"headerText":"Country","field":"name"},{"headerText":"Code","field":"code"},{"headerText":"Value (1USD)","field":"value"}]'
+          selection-mode.row="single" selection-mode.column="single" display="grid" horizontal-grid-visible="enabled"
+          vertical-grid-visible="enabled" column-resize-behavior="add" layout="fixed"
+          scroll-policy-options.fetch-size="20" scroll-to-key="always" data="[[$variables.getCurrencydataListSDP]]">
+        </oj-table>
+      </div>
+    </div>
+    <div slot="oj-tab-bar--827849815-1-tab-2" id="oj-tab-bar--827849815-1-tab-2-panel"
+      aria-labelledby="oj-tab-bar--827849815-1-tab-2-tab" role="tabpanel">
+      <div class="oj-flex">
+        <oj-chart type="bar" class="oj-sm-flex-initial oj-flex-item oj-sm-12 oj-md-12" y-axis.title="value"
+          x-axis.title="code" legend.rendered="off" data="[[$variables.getCurrencydataListSDP4]]">
+          <template slot="itemTemplate">
+            <oj-chart-item value="[[ $current.data.value ]]" group-id="[[[ $current.data.code ]]]"
+              series-id="Undefined"></oj-chart-item>
+          </template>
+        </oj-chart>
+      </div>
+    </div>
+  </oj-switcher>
+</div>
+
+

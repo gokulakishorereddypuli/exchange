@@ -1,0 +1,256 @@
+{
+  "title": "Uni Currency Exchange ($)",
+  "description": "",
+  "variables": {
+
+    "fromCurrency": {
+      "type": "number",
+      "dirtyDataBehavior": "track",
+      "input": "none",
+      "persisted": "session"
+    },
+    "fromValue": {
+      "type": "number",
+      "dirtyDataBehavior": "track",
+      "persisted": "session"
+    },
+    "getCurrencydataListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "apexCloudExchangeDataService/getCurrencydata",
+        "keyAttributes": "code",
+        "itemsPath": "items",
+        "responseType": "getCurrencydataResponse"
+      }
+    },
+    "getCurrencydataListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "apexCloudExchangeDataService/getCurrencydata",
+        "keyAttributes": "value",
+        "itemsPath": "items",
+        "responseType": "getCurrencydataResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getCurrencydataListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "apexCloudExchangeDataService/getCurrencydata",
+        "keyAttributes": "value",
+        "itemsPath": "items",
+        "responseType": "getCurrencydataResponse3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getCurrencydataListSDP4": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "apexCloudExchangeDataService/getCurrencydata",
+        "keyAttributes": "code",
+        "itemsPath": "items",
+        "responseType": "getCurrencydataResponse4"
+      }
+    },
+    "getCurrencydataListSDP5": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "apexCloudExchangeDataService/getCurrencydata",
+        "keyAttributes": "code",
+        "itemsPath": "items",
+        "responseType": "getCurrencydataResponse5"
+      }
+    },
+    "ojTabBar8278498151SelectedItem": {
+      "type": "string",
+      "defaultValue": "oj-tab-bar--827849815-1-tab-1"
+    },
+    "toCurrency": {
+      "type": "number",
+      "dirtyDataBehavior": "track",
+      "persisted": "session"
+    },
+    "toValue": {
+      "type": "number",
+      "dirtyDataBehavior": "track",
+      "persisted": "session"
+    }
+
+  },
+  "metadata": {
+    "dynamicContainerMetadata": {
+      "type": "vb/ContainerMetadataProviderDescriptor"
+    }
+  },
+  "types": {
+    "@decorators.getCurrencydataResponse": {
+      "endpoint": "getCurrencydata",
+      "service": "apexCloudExchangeDataService",
+      "path": "response"
+    },
+    "@decorators.getCurrencydataResponse2": {
+      "endpoint": "getCurrencydata",
+      "service": "apexCloudExchangeDataService",
+      "path": "response"
+    },
+    "@decorators.getCurrencydataResponse3": {
+      "endpoint": "getCurrencydata",
+      "service": "apexCloudExchangeDataService",
+      "path": "response"
+    },
+    "@decorators.getCurrencydataResponse4": {
+      "endpoint": "getCurrencydata",
+      "service": "apexCloudExchangeDataService",
+      "path": "response"
+    },
+    "@decorators.getCurrencydataResponse5": {
+      "endpoint": "getCurrencydata",
+      "service": "apexCloudExchangeDataService",
+      "path": "response"
+    },
+    "getCurrencydataResponse": {
+      "items": [
+        {
+          "code": "string",
+          "name": "string",
+          "value": "number"
+        }
+      ]
+    },
+    "getCurrencydataResponse2": {
+      "items": [
+        {
+          "name": "string",
+          "value": "number"
+        }
+      ]
+    },
+    "getCurrencydataResponse3": {
+      "items": [
+        {
+          "name": "string",
+          "value": "number"
+        }
+      ]
+    },
+    "getCurrencydataResponse4": {
+      "items": [
+        {
+          "code": "string",
+          "value": "number"
+        }
+      ]
+    },
+    "getCurrencydataResponse5": {
+      "items": [
+        {
+          "code": "string",
+          "value": "number"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "comboValue": {
+      "chains": [
+        {
+          "chain": "FromCurrency_ComboValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "comboValue2": {
+      "chains": [
+        {
+          "chain": "ToCurrency_ComboValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue": {
+      "chains": [
+        {
+          "chain": "FromValue_InputNumberValueChangeChain"
+        }
+      ]
+    },
+    "inputNumberValue2": {
+      "chains": [
+        {
+          "chain": "ToValue_InputNumberValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-accordion": {
+        "path": "ojs/ojaccordion"
+      },
+      "oj-chart": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-item": {
+        "path": "ojs/ojchart"
+      },
+      "oj-collapsible": {
+        "path": "ojs/ojcollapsible"
+      },
+      "oj-combobox-one": {
+        "path": "ojs/ojselectcombobox"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-popup": {
+        "path": "ojs/ojpopup"
+      },
+      "oj-switcher": {
+        "path": "ojs/ojswitcher"
+      },
+      "oj-tab-bar": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      }
+
+   },
+    "modules": {
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+    }
+  },
+  "templates": {
+  },
+  "constants": {}
+}
