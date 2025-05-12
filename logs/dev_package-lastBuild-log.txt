@@ -1,0 +1,808 @@
+[2025-05-12 19:13:26] Build scheduled. Build started by SCM change.
+[2025-05-12 19:13:26] Build task id: 8c44e31c-4e54-4eed-b775-12893fb2d823
+[2025-05-12 19:13:26] Waiting to obtain executor [System Default OL7 for Visual Builder] to start the execution of the build
+[2025-05-12 19:13:43] Executor obtained. Type: VM Template: System Default OL7 for Visual Builder Executor VM ID: 22361
+[2025-05-12 19:13:43] Build execution started.
+[2025-05-12 19:13:43] 
+[2025-05-12 19:13:43] 
+[2025-05-12 19:13:43] Parameters in this job: 
+[2025-05-12 19:13:43] ------------------------------------------------------------------
+[2025-05-12 19:13:43] EXECUTOR_TYPE = VM
+[2025-05-12 19:13:43] TASKID = 8c44e31c-4e54-4eed-b775-12893fb2d823
+[2025-05-12 19:13:43] ------------------------------------------------------------------
+[2025-05-12 19:13:43] Git: Checkout directory is the workspace root.
+[2025-05-12 19:13:43] Git: git version 2.43.5
+[2025-05-12 19:13:43] Git: Fetching from remote repository exchange-app.git
+[2025-05-12 19:13:43] Git: Checking out branch dev2.0
+[2025-05-12 19:13:43] Git: Done
+[2025-05-12 19:13:43] === Begin Visual Application Packaging Preparation ===
+[2025-05-12 19:13:43] Shell script to be executed:
+[2025-05-12 19:13:43] [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ] && npm ci || npm install
+[2025-05-12 19:13:43] 
+[2025-05-12 19:13:43] [ -d build/processed ] || [ -d build/optimized ] || ./node_modules/.bin/grunt vb-process-local --url:ce=https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/
+[2025-05-12 19:13:43] 
+[2025-05-12 19:13:43] ./node_modules/.bin/grunt vb-archive:sources --sources-zip-path='build/sources.zip' vb-package --url:ce=https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/ vb-archive:optimized --optimized-zip-path='build/built-assets.zip'
+[2025-05-12 19:13:43] === End Visual Application Packaging Preparation ===
+[2025-05-12 19:13:43] === Begin Visual Application Packaging Execution ===
+[2025-05-12 19:13:43] BEGIN shell script execution with /bin/sh -e
+[2025-05-12 19:14:08] npm warn deprecated osenv@0.1.5: This package is no longer supported.
+[2025-05-12 19:14:08] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[2025-05-12 19:14:08] npm warn deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+[2025-05-12 19:14:08] npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+[2025-05-12 19:14:08] npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+[2025-05-12 19:14:08] npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+[2025-05-12 19:14:08] npm warn deprecated har-validator@5.1.5: this library is no longer supported
+[2025-05-12 19:14:08] npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+[2025-05-12 19:14:08] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.2.0: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+[2025-05-12 19:14:09] npm warn deprecated glob@7.1.7: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated glob@7.1.7: Glob versions prior to v9 are no longer supported
+[2025-05-12 19:14:09] npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+[2025-05-12 19:14:09] npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[2025-05-12 19:14:09] npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+[2025-05-12 19:14:09] npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[2025-05-12 19:14:09] npm warn deprecated workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+[2025-05-12 19:14:09] npm warn deprecated @babel/polyfill@7.12.1: 🚨 This package has been deprecated in favor of separate inclusion of a polyfill and regenerator-runtime (when needed). See the @babel/polyfill docs (https://babeljs.io/docs/en/babel-polyfill) for more information.
+[2025-05-12 19:14:11] npm warn deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+[2025-05-12 19:14:16] added 1298 packages, and audited 1299 packages in 32s
+[2025-05-12 19:14:16] 201 packages are looking for funding
+[2025-05-12 19:14:16]   run `npm fund` for details
+[2025-05-12 19:14:16] 17 vulnerabilities (7 moderate, 9 high, 1 critical)
+[2025-05-12 19:14:16] To address issues that do not require attention, run:
+[2025-05-12 19:14:16]   npm audit fix
+[2025-05-12 19:14:16] Some issues need review, and may require choosing
+[2025-05-12 19:14:16] a different dependency.
+[2025-05-12 19:14:16] Run `npm audit` for details.
+[2025-05-12 19:14:16] [grunt-vb-build] grunt.registerTask patch registered.
+[2025-05-12 19:14:16] Running "vb-process-local" task
+[2025-05-12 19:14:16] runTask vb-process-local
+[2025-05-12 19:14:18] Running "_vb-process-local-pre-check" task
+[2025-05-12 19:14:18] Running project checks...
+[2025-05-12 19:14:18] no project issues found
+[2025-05-12 19:14:18] Running "_vb-process-local" task
+[2025-05-12 19:14:18] @oracle/grunt-vb-build:2504.0.29 (in node v20.17.0)
+[2025-05-12 19:14:18] platform: linux, version: #2 SMP Wed Mar 19 13:00:52 PDT 2025, totalmem: 15.33 GB, freemem: 13.37 GB, cpu: AMD EPYC 7J13 64-Core Processor
+[2025-05-12 19:14:18] ╔════════════════════════════════════════════════════════════════════════╗
+[2025-05-12 19:14:18] ║ WARNING                                                                ║
+[2025-05-12 19:14:18] ╟────────────────────────────────────────────────────────────────────────╢
+[2025-05-12 19:14:18] ║ The environment does not contain following http proxy                  ║
+[2025-05-12 19:14:18] ║ variables that may be imperative for the build process success.        ║
+[2025-05-12 19:14:18] ║ Please ensure the variables are properly set before running the build! ║
+[2025-05-12 19:14:18] ╟────────────────────────────────────────────────────────────────────────╢
+[2025-05-12 19:14:18] ║ ╔═════════════╗                                                        ║
+[2025-05-12 19:14:18] ║ ║ http_proxy  ║                                                        ║
+[2025-05-12 19:14:18] ║ ╟─────────────╢                                                        ║
+[2025-05-12 19:14:18] ║ ║ https_proxy ║                                                        ║
+[2025-05-12 19:14:18] ║ ╟─────────────╢                                                        ║
+[2025-05-12 19:14:18] ║ ║ no_proxy    ║                                                        ║
+[2025-05-12 19:14:18] ║ ╚═════════════╝                                                        ║
+[2025-05-12 19:14:18] ║                                                                        ║
+[2025-05-12 19:14:18] ╚════════════════════════════════════════════════════════════════════════╝
+[2025-05-12 19:14:18] build mode for standard visual builder runtime service deployment
+[2025-05-12 19:14:18] [VisualApplicationBuilder] Building visual application "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace"
+[2025-05-12 19:14:18] [ApplicationBuilder] building web application "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/webApps/dev1" with PWA disabled
+[2025-05-12 19:14:18] [ApplicationBuilder] visual-application.json:
+[2025-05-12 19:14:18] {
+[2025-05-12 19:14:18]     "vbcs.dt.version": "20250311-25.07.0",
+[2025-05-12 19:14:18]     "dependencies": {
+[2025-05-12 19:14:18]         "upgrade": "micro",
+[2025-05-12 19:14:18]         "paths": {
+[2025-05-12 19:14:18]             "jet": "https://static.oracle.com/cdn/jet/17.1.2",
+[2025-05-12 19:14:18]             "telemetry": "https://static.oracle.com/cdn/trace/10.0.2",
+[2025-05-12 19:14:18]             "oracleImageGallery": "https://static.oracle.com/cdn/fnd/gallery/2504.0.2",
+[2025-05-12 19:14:18]             "visualRuntime": "https://static.oracle.com/cdn/vb/2504.0.0"
+[2025-05-12 19:14:18]         }
+[2025-05-12 19:14:18]     },
+[2025-05-12 19:14:18]     "source.version": "2504",
+[2025-05-12 19:14:18]     "rootURL": "Main",
+[2025-05-12 19:14:18]     "version": "0.1"
+[2025-05-12 19:14:18] }
+[2025-05-12 19:14:18] [AssetsBuilder] application assets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1
+[2025-05-12 19:14:18] [IdcsInfoBuilder] injected IDCS info marker into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/app-flow.json
+[2025-05-12 19:14:18] [UserProfileUrlBuilder] injected user profile URL into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/app-flow.json
+[2025-05-12 19:14:18] [DeploymentProfileBuilder] injected active profile marker into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/app-flow.json
+[2025-05-12 19:14:18] [CatalogApplicationBuilder] /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/services/catalog.json marked for postprocessing.
+[2025-05-12 19:14:18] [NlsV2Builder] translation bundle sets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/resources/translations
+[2025-05-12 19:14:18] [WebManifestBuilder] WARNING: PWA manifest "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/webApps/dev1/manifest.webmanifest" does not exist.
+[2025-05-12 19:14:18] [NlsV2Builder] Processed v2 translation bundles: 0, override bundles: 0
+[2025-05-12 19:14:18] [TypescriptBuilder] typescript compilation disabled
+[2025-05-12 19:14:18] [AppFlowBuilder] /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/app-flow.json written.
+[2025-05-12 19:14:18] [ServiceWorkerBuilder] bundled sw.js from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/visualRuntime/2504.0.0/sw.js stored into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/vbServiceWorker.js
+[2025-05-12 19:14:18] [ServiceWorkerBuilder] bundled sw.js from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/visualRuntime/2504.0.0/sw.js stored into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/vb-service-worker-modules.js
+[2025-05-12 19:14:18] [ServiceWorkerBuilder] bundled sw.js from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/visualRuntime/2504.0.0/sw.js stored into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/vb-service-worker-modules.js.map
+[2025-05-12 19:14:18] [ComponentsBuilder] no used component dependencies
+[2025-05-12 19:14:18] [NlsBuilder] translation files converted into modules
+[2025-05-12 19:14:18] [DynamicLayoutsBuilder] layout copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/dynamicLayouts
+[2025-05-12 19:14:18] [CopyServicesBuilder] services assets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/version_1747077258656/services
+[2025-05-12 19:14:18] [IndexHtmlBuilder] "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/index.html" written.
+[2025-05-12 19:14:18] [ApplicationManifestBuilder] Build manifest /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1/build-info.json created.
+[2025-05-12 19:14:18] [ApplicationBuilder] web application built into "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/dev1"
+[2025-05-12 19:14:18] [ApplicationBuilder] building web application "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/webApps/reports" with PWA disabled
+[2025-05-12 19:14:18] [ApplicationBuilder] visual-application.json:
+[2025-05-12 19:14:18] {
+[2025-05-12 19:14:18]     "vbcs.dt.version": "20250311-25.07.0",
+[2025-05-12 19:14:18]     "dependencies": {
+[2025-05-12 19:14:18]         "upgrade": "micro",
+[2025-05-12 19:14:18]         "paths": {
+[2025-05-12 19:14:18]             "jet": "https://static.oracle.com/cdn/jet/17.1.2",
+[2025-05-12 19:14:18]             "telemetry": "https://static.oracle.com/cdn/trace/10.0.2",
+[2025-05-12 19:14:18]             "oracleImageGallery": "https://static.oracle.com/cdn/fnd/gallery/2504.0.2",
+[2025-05-12 19:14:18]             "visualRuntime": "https://static.oracle.com/cdn/vb/2504.0.0"
+[2025-05-12 19:14:18]         }
+[2025-05-12 19:14:18]     },
+[2025-05-12 19:14:18]     "source.version": "2504",
+[2025-05-12 19:14:18]     "rootURL": "Main",
+[2025-05-12 19:14:18]     "version": "0.1"
+[2025-05-12 19:14:18] }
+[2025-05-12 19:14:18] [AssetsBuilder] application assets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports
+[2025-05-12 19:14:18] [IdcsInfoBuilder] injected IDCS info marker into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/app-flow.json
+[2025-05-12 19:14:18] [UserProfileUrlBuilder] injected user profile URL into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/app-flow.json
+[2025-05-12 19:14:18] [DeploymentProfileBuilder] injected active profile marker into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/app-flow.json
+[2025-05-12 19:14:18] [CatalogApplicationBuilder] /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/services/catalog.json marked for postprocessing.
+[2025-05-12 19:14:18] [NlsV2Builder] translation bundle sets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/resources/translations
+[2025-05-12 19:14:18] [WebManifestBuilder] WARNING: PWA manifest "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/webApps/reports/manifest.webmanifest" does not exist.
+[2025-05-12 19:14:18] [NlsV2Builder] Processed v2 translation bundles: 0, override bundles: 0
+[2025-05-12 19:14:18] [TypescriptBuilder] typescript compilation disabled
+[2025-05-12 19:14:18] [ServiceWorkerBuilder] bundled sw.js from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/visualRuntime/2504.0.0/sw.js stored into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/vbServiceWorker.js
+[2025-05-12 19:14:18] [ServiceWorkerBuilder] bundled sw.js from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/visualRuntime/2504.0.0/sw.js stored into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/vb-service-worker-modules.js
+[2025-05-12 19:14:18] [ServiceWorkerBuilder] bundled sw.js from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/visualRuntime/2504.0.0/sw.js stored into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/vb-service-worker-modules.js.map
+[2025-05-12 19:14:18] [ComponentsBuilder] found used component dependencies: {
+[2025-05-12 19:14:18]     "oj-dyn": {
+[2025-05-12 19:14:18]         "version": "17.1.4",
+[2025-05-12 19:14:18]         "components": {
+[2025-05-12 19:14:18]             "container": "17.1.4"
+[2025-05-12 19:14:18]         }
+[2025-05-12 19:14:18]     },
+[2025-05-12 19:14:18]     "oj-dynamic": {
+[2025-05-12 19:14:18]         "version": "17.1.4",
+[2025-05-12 19:14:18]         "components": {
+[2025-05-12 19:14:18]             "table": "17.1.4"
+[2025-05-12 19:14:18]         }
+[2025-05-12 19:14:18]     }
+[2025-05-12 19:14:18] }
+[2025-05-12 19:14:18] [models/ComponentExchange] resolving component dependencies at https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/dependencyResolver
+[2025-05-12 19:14:18] [AppFlowBuilder] /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/app-flow.json written.
+[2025-05-12 19:14:18] [NlsBuilder] translation files converted into modules
+[2025-05-12 19:14:18] [DynamicLayoutsBuilder] layout copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/dynamicLayouts
+[2025-05-12 19:14:18] [CopyServicesBuilder] services assets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/version_1747077258656/services
+[2025-05-12 19:14:18] [IndexHtmlBuilder] "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/index.html" written.
+[2025-05-12 19:14:19] [ComponentsBuilder] component dependencies resolved in 98 ms
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing components pack oj-dyn version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dyn/17.1.4)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing components pack oj-dynamic version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4)
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component pack metadata from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dyn/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component pack metadata from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dyn/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.251 seconds, file size is 1.4410076141357422 MB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4-unzip-in-progress
+[2025-05-12 19:14:19] expanded 130 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4
+[2025-05-12 19:14:19] [ComponentsBuilder] resources linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dyn/17.1.4"
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dyn-container version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dyn/17.1.4/container)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dyn-bind-section version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dyn/17.1.4/bind-section)
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dyn-container/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dyn-bind-section/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.474 seconds, file size is 3.324976921081543 MB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4-unzip-in-progress
+[2025-05-12 19:14:19] builder "VisualApplicationBuilder" has not finished after 999 ms.
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dyn-bind-section/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4-component-bind-section-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.209 seconds, file size is 7.40234375 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4-component-bind-section-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/bind-section-unzip-in-progress
+[2025-05-12 19:14:19] expanded 14 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4-component-bind-section-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/bind-section-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/bind-section-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/bind-section
+[2025-05-12 19:14:19] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/bind-section" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dyn/17.1.4/bind-section"
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dyn-container/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4-component-container-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.241 seconds, file size is 14.8828125 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4-component-container-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/container-unzip-in-progress
+[2025-05-12 19:14:19] expanded 15 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dyn-17.1.4-component-container-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/container-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/container-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/container
+[2025-05-12 19:14:19] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dyn/17.1.4/container" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dyn/17.1.4/container"
+[2025-05-12 19:14:19] expanded 232 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4
+[2025-05-12 19:14:19] [ComponentsBuilder] resources linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4"
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dynamic-shared version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/shared)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dynamic-form version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/form)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dynamic-utils version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/utils)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dynamic-bind-field version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/bind-field)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dynamic-providers version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/providers)
+[2025-05-12 19:14:19] [ComponentsBuilder] preparing pack component oj-dynamic-table version 17.1.4 to internal components cache (/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/table)
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-shared/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-form/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-utils/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-bind-field/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-providers/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] downloading component from https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-table/versions/17.1.4/download
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-form/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-form-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.115 seconds, file size is 168.8779296875 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-form-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/form-unzip-in-progress
+[2025-05-12 19:14:19] builder "ApplicationBuilder" has not finished after 1000 ms.
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-shared/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-shared-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.145 seconds, file size is 146.3330078125 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-shared-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/shared-unzip-in-progress
+[2025-05-12 19:14:19] builder "ComponentsBuilder" has not finished after 1000 ms.
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-bind-field/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-bind-field-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.142 seconds, file size is 11.75390625 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-bind-field-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/bind-field-unzip-in-progress
+[2025-05-12 19:14:19] expanded 124 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-shared-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/shared-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/shared-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/shared
+[2025-05-12 19:14:19] expanded 12 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-bind-field-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/bind-field-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/bind-field-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/bind-field
+[2025-05-12 19:14:19] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/shared" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/shared"
+[2025-05-12 19:14:19] expanded 165 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-form-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/form-unzip-in-progress
+[2025-05-12 19:14:19] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/form-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/form
+[2025-05-12 19:14:19] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/bind-field" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/bind-field"
+[2025-05-12 19:14:19] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/form" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/form"
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-table/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-table-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.17 seconds, file size is 218.27734375 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-table-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/table-unzip-in-progress
+[2025-05-12 19:14:19] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-providers/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-providers-17.1.4.zip finished at Mon, 12 May 2025 19:14:19 GMT, time elapsed 0.189 seconds, file size is 435.9462890625 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:19] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-providers-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/providers-unzip-in-progress
+[2025-05-12 19:14:20] [models/ComponentExchange] Download of https://appdevcs98829307-ocuocictrng7-iad.developer.ocp.oraclecloud.com/appdevcs98829307-ocuocictrng7-iad/s/appdevcs98829307-ocuocictrng7-iad_exchange-app_39404/compcatalog/0.2.0/components/oj-dynamic-utils/versions/17.1.4/download to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-utils-17.1.4.zip finished at Mon, 12 May 2025 19:14:20 GMT, time elapsed 0.276 seconds, file size is 655.8955078125 KB, content check using "SHA3-512" passed
+[2025-05-12 19:14:20] unzipping /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-utils-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/utils-unzip-in-progress
+[2025-05-12 19:14:20] expanded 116 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-providers-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/providers-unzip-in-progress
+[2025-05-12 19:14:20] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/providers-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/providers
+[2025-05-12 19:14:20] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/providers" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/providers"
+[2025-05-12 19:14:20] expanded 169 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-table-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/table-unzip-in-progress
+[2025-05-12 19:14:20] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/table-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/table
+[2025-05-12 19:14:20] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/table" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/table"
+[2025-05-12 19:14:20] expanded 62 entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/zips/pack-oj-dynamic-17.1.4-component-utils-17.1.4.zip into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/utils-unzip-in-progress
+[2025-05-12 19:14:20] [ComponentsBuilder] Renamed /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/utils-unzip-in-progress to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/utils
+[2025-05-12 19:14:20] [ComponentsBuilder] resources already linked from shared cache "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/componentexchange/oj-dynamic/17.1.4/utils" to "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/cache/components/projectmembers/webApps/reports/oj-dynamic/17.1.4/utils"
+[2025-05-12 19:14:20] [ComponentsBuilder] component dependencies assets prepared in 1073 ms.
+[2025-05-12 19:14:20] [ApplicationManifestBuilder] Build manifest /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports/build-info.json created.
+[2025-05-12 19:14:20] [ApplicationBuilder] web application built into "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/webApps/reports"
+[2025-05-12 19:14:20] [CopyVisualApplicationBuilder] files copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed
+[2025-05-12 19:14:20] [CopyServicesToVisualApplicationBuilder] services assets copied into /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/processed/services
+[2025-05-12 19:14:20] [VisualApplicationBuilder] Visual application built into "build/processed"
+[2025-05-12 19:14:20] [BuildManifestBuilder] Build manifest /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/process-local.manifest.json written.
+[2025-05-12 19:14:20] builder statistics
+[2025-05-12 19:14:20] ┌─────────┬──────────────────────────────────────────┬──────────┐
+[2025-05-12 19:14:20] │ (index) │ builderId                                │ duration │
+[2025-05-12 19:14:20] ├─────────┼──────────────────────────────────────────┼──────────┤
+[2025-05-12 19:14:20] │ 0       │ 'VisualApplicationBuilder'               │ 1476     │
+[2025-05-12 19:14:20] │ 1       │ 'ApplicationBuilder'                     │ 1248     │
+[2025-05-12 19:14:20] │ 2       │ 'ComponentsBuilder'                      │ 1193     │
+[2025-05-12 19:14:20] │ 3       │ 'IndexHtmlBuilder'                       │ 52       │
+[2025-05-12 19:14:20] │ 4       │ 'CopyServicesBuilder'                    │ 41       │
+[2025-05-12 19:14:20] │ 5       │ 'DynamicLayoutsBuilder'                  │ 39       │
+[2025-05-12 19:14:20] │ 6       │ 'NlsBuilder'                             │ 38       │
+[2025-05-12 19:14:20] │ 7       │ 'AppFlowBuilder'                         │ 36       │
+[2025-05-12 19:14:20] │ 8       │ 'AssetsBuilder'                          │ 29       │
+[2025-05-12 19:14:20] │ 9       │ 'ApplicationManifestBuilder'             │ 24       │
+[2025-05-12 19:14:20] │ 10      │ 'ResourcesListBuilder'                   │ 22       │
+[2025-05-12 19:14:20] │ 11      │ 'CopyVisualApplicationBuilder'           │ 19       │
+[2025-05-12 19:14:20] │ 12      │ 'ServiceWorkerBuilder'                   │ 12       │
+[2025-05-12 19:14:20] │ 13      │ 'CopyServicesToVisualApplicationBuilder' │ 8        │
+[2025-05-12 19:14:20] │ 14      │ 'NlsV2Builder'                           │ 4        │
+[2025-05-12 19:14:20] │ 15      │ 'TypescriptBuilder'                      │ 4        │
+[2025-05-12 19:14:20] │ 16      │ 'VersionInfoBuilder'                     │ 4        │
+[2025-05-12 19:14:20] │ 17      │ 'WebManifestBuilder'                     │ 3        │
+[2025-05-12 19:14:20] │ 18      │ 'IdcsInfoBuilder'                        │ 1        │
+[2025-05-12 19:14:20] │ 19      │ 'UserProfileUrlBuilder'                  │ 1        │
+[2025-05-12 19:14:20] │ 20      │ 'DeploymentProfileBuilder'               │ 1        │
+[2025-05-12 19:14:20] │ 21      │ 'LocalComponentsBuilder'                 │ 1        │
+[2025-05-12 19:14:20] │ 22      │ 'ServiceReferencesBuilder'               │ 1        │
+[2025-05-12 19:14:20] │ 23      │ 'CatalogApplicationBuilder'              │ 1        │
+[2025-05-12 19:14:20] │ 24      │ 'RemoteStylesheetsBuilder'               │ 0        │
+[2025-05-12 19:14:20] │ 25      │ 'ThemeBuilder'                           │ 0        │
+[2025-05-12 19:14:20] │ 26      │ 'BuilderInfoBuilder'                     │ 0        │
+[2025-05-12 19:14:20] │ 27      │ 'BuildManifestBuilder'                   │ 0        │
+[2025-05-12 19:14:20] └─────────┴──────────────────────────────────────────┴──────────┘
+[2025-05-12 19:14:20] Done.
+[2025-05-12 19:14:20] Execution Time (2025-05-12 19:14:18 UTC-0)
+[2025-05-12 19:14:20] loading tasks                59ms  ▇▇ 4%
+[2025-05-12 19:14:20] _vb-process-local-pre-check  22ms  ▇ 1%
+[2025-05-12 19:14:20] _vb-process-local            1.5s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 95%
+[2025-05-12 19:14:20] Total 1.6s
+[2025-05-12 19:14:20] [grunt-vb-build] grunt.registerTask patch registered.
+[2025-05-12 19:14:20] Running "vb-archive:sources" (vb-archive) task
+[2025-05-12 19:14:20] runTask vb-archive
+[2025-05-12 19:14:22] Running "vb-archive:sources" (vb-archive) task
+[2025-05-12 19:14:22] @oracle/grunt-vb-build:2504.0.29 (in node v20.17.0)
+[2025-05-12 19:14:22] platform: linux, version: #2 SMP Wed Mar 19 13:00:52 PDT 2025, totalmem: 15.33 GB, freemem: 13.38 GB, cpu: AMD EPYC 7J13 64-Core Processor
+[2025-05-12 19:14:22] ╔════════════════════════════════════════════════════════════════════════╗
+[2025-05-12 19:14:22] ║ WARNING                                                                ║
+[2025-05-12 19:14:22] ╟────────────────────────────────────────────────────────────────────────╢
+[2025-05-12 19:14:22] ║ The environment does not contain following http proxy                  ║
+[2025-05-12 19:14:22] ║ variables that may be imperative for the build process success.        ║
+[2025-05-12 19:14:22] ║ Please ensure the variables are properly set before running the build! ║
+[2025-05-12 19:14:22] ╟────────────────────────────────────────────────────────────────────────╢
+[2025-05-12 19:14:22] ║ ╔═════════════╗                                                        ║
+[2025-05-12 19:14:22] ║ ║ http_proxy  ║                                                        ║
+[2025-05-12 19:14:22] ║ ╟─────────────╢                                                        ║
+[2025-05-12 19:14:22] ║ ║ https_proxy ║                                                        ║
+[2025-05-12 19:14:22] ║ ╟─────────────╢                                                        ║
+[2025-05-12 19:14:22] ║ ║ no_proxy    ║                                                        ║
+[2025-05-12 19:14:22] ║ ╚═════════════╝                                                        ║
+[2025-05-12 19:14:22] ║                                                                        ║
+[2025-05-12 19:14:22] ╚════════════════════════════════════════════════════════════════════════╝
+[2025-05-12 19:14:22] Running "compress:sources" (compress) task
+[2025-05-12 19:14:24] >> Compressed 198 files.
+[2025-05-12 19:14:24] Running "vb-package" (vb-package_esm_bridge_inactive_wrapper) task
+[2025-05-12 19:14:24] runTask vb-package
+[2025-05-12 19:14:24] Running "vb-package" task
+[2025-05-12 19:14:24] Running "vb-optimize" task
+[2025-05-12 19:14:24] Running "vb-prepare" task
+[2025-05-12 19:14:24] Running "clean:build-optimized" (clean) task
+[2025-05-12 19:14:24] >> 0 paths cleaned.
+[2025-05-12 19:14:24] Running "copy:processedSourcesToOptimized" (copy) task
+[2025-05-12 19:14:24] Created 70 directories, copied 127 files
+[2025-05-12 19:14:24] Running "vb-css-minify" task
+[2025-05-12 19:14:24] [css-minify grunt task] css minify project member: path: webApps/dev1, type: web application
+[2025-05-12 19:14:24] [css-minify grunt task] minifying 2 css files in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1
+[2025-05-12 19:14:24] [css-minify grunt task] css minification completed (compressed to 65%)
+[2025-05-12 19:14:24] [css-minify grunt task] css minify project member: path: webApps/reports, type: web application
+[2025-05-12 19:14:24] [css-minify grunt task] minifying 2 css files in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports
+[2025-05-12 19:14:24] [css-minify grunt task] css minification completed (compressed to 65%)
+[2025-05-12 19:14:24] Running "vb-json-minify" task
+[2025-05-12 19:14:24] [json-minify grunt task] json minify project member: path: webApps/dev1, type: web application
+[2025-05-12 19:14:24] [json-minify grunt task] minifying 18 json files in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1
+[2025-05-12 19:14:24] [json-minify grunt task] json minification completed (compressed to 34%)
+[2025-05-12 19:14:24] [json-minify grunt task] json minify project member: path: webApps/reports, type: web application
+[2025-05-12 19:14:24] [json-minify grunt task] minifying 16 json files in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports
+[2025-05-12 19:14:24] [json-minify grunt task] json minification completed (compressed to 38%)
+[2025-05-12 19:14:24] Running "vb-html-minify" task
+[2025-05-12 19:14:24] [html-minify grunt task] html minify project member: path: webApps/dev1, type: web application
+[2025-05-12 19:14:24] [html-minify grunt task] minifying 6 html files in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1
+[2025-05-12 19:14:24] [html-minify grunt task] html minification completed (compressed to 84%)
+[2025-05-12 19:14:24] [html-minify grunt task] html minify project member: path: webApps/reports, type: web application
+[2025-05-12 19:14:24] [html-minify grunt task] minifying 5 html files in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports
+[2025-05-12 19:14:24] [html-minify grunt task] html minification completed (compressed to 93%)
+[2025-05-12 19:14:24] Running "vb-require-bundle" task
+[2025-05-12 19:14:24] Optimizing requirejs modules
+[2025-05-12 19:14:24] [optimizer grunt task] forceOptimize: true
+[2025-05-12 19:14:24] [optimizer grunt task] optimizerConfig: {
+[2025-05-12 19:14:24]     "moduleSourceRelativePath": "webApps/dev1",
+[2025-05-12 19:14:24]     "assetsPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1",
+[2025-05-12 19:14:24]     "assetsRootPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized",
+[2025-05-12 19:14:24]     "buildPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build",
+[2025-05-12 19:14:24]     "emptyPaths": [],
+[2025-05-12 19:14:24]     "excludes": [],
+[2025-05-12 19:14:24]     "logger": {
+[2025-05-12 19:14:24]         "level": 2
+[2025-05-12 19:14:24]     },
+[2025-05-12 19:14:24]     "logRecordBuilder": {
+[2025-05-12 19:14:24]         "_source": "optimizer grunt task",
+[2025-05-12 19:14:24]         "_message": "forceOptimize: true",
+[2025-05-12 19:14:24]         "_level": 2
+[2025-05-12 19:14:24]     },
+[2025-05-12 19:14:24]     "files": {},
+[2025-05-12 19:14:24]     "network": {}
+[2025-05-12 19:14:24] }
+[2025-05-12 19:14:24] [optimizer grunt task] optimizing project in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/jet/17.1.2/default/js/debug/ojL10n.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojL10n.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/jet/17.1.2/default/js/debug/ojcss.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojcss.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/text.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/text.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/css.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/css-builder.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css-builder.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/normalize.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/normalize.js
+[2025-05-12 19:14:24] [optimizer grunt task] esprima version 5.7.1 installed into requirejs
+[2025-05-12 19:14:24] [optimizer grunt task] using default bundles configuration
+[2025-05-12 19:14:24] [optimizer grunt task] bundles configuration: {
+[2025-05-12 19:14:24]     "vb-app-bundle": {
+[2025-05-12 19:14:24]         "modules": {
+[2025-05-12 19:14:24]             "find": [
+[2025-05-12 19:14:24]                 ".*(\\.(js|json|html|css))$"
+[2025-05-12 19:14:24]             ]
+[2025-05-12 19:14:24]         }
+[2025-05-12 19:14:24]     }
+[2025-05-12 19:14:24] }
+[2025-05-12 19:14:24] [optimizer grunt task] enforcing text plugin for imported stylesheet resources/css/app.css
+[2025-05-12 19:14:24] [optimizer grunt task] enforcing text plugin for imported stylesheet resources/css/shell.css
+[2025-05-12 19:14:24] [optimizer grunt task] Optimizer config: {
+[2025-05-12 19:14:24]     "baseUrl": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1/version_1747077258656",
+[2025-05-12 19:14:24]     "optimize": "none",
+[2025-05-12 19:14:24]     "generateSourceMaps": true,
+[2025-05-12 19:14:24]     "paths": {
+[2025-05-12 19:14:24]         "ojL10n": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojL10n",
+[2025-05-12 19:14:24]         "ojcss": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojcss",
+[2025-05-12 19:14:24]         "text": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/text",
+[2025-05-12 19:14:24]         "css": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css",
+[2025-05-12 19:14:24]         "css-builder": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css-builder",
+[2025-05-12 19:14:24]         "normalize": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/normalize",
+[2025-05-12 19:14:24]         "jqueryui-amd": "empty:",
+[2025-05-12 19:14:24]         "oj-c": "empty:",
+[2025-05-12 19:14:24]         "ojs": "empty:",
+[2025-05-12 19:14:24]         "ojtranslations": "empty:",
+[2025-05-12 19:14:24]         "proj4": "empty:",
+[2025-05-12 19:14:24]         "persist": "empty:",
+[2025-05-12 19:14:24]         "knockout": "empty:",
+[2025-05-12 19:14:24]         "jquery": "empty:",
+[2025-05-12 19:14:24]         "signals": "empty:",
+[2025-05-12 19:14:24]         "hammerjs": "empty:",
+[2025-05-12 19:14:24]         "ojdnd": "empty:",
+[2025-05-12 19:14:24]         "pouchdb": "empty:",
+[2025-05-12 19:14:24]         "preact": "empty:",
+[2025-05-12 19:14:24]         "touchr": "empty:",
+[2025-05-12 19:14:24]         "vb": "empty:",
+[2025-05-12 19:14:24]         "vbc": "empty:",
+[2025-05-12 19:14:24]         "vbsw": "empty:",
+[2025-05-12 19:14:24]         "acorn": "empty:",
+[2025-05-12 19:14:24]         "acorn-walk": "empty:",
+[2025-05-12 19:14:24]         "boss": "empty:",
+[2025-05-12 19:14:24]         "customElements": "empty:",
+[2025-05-12 19:14:24]         "dompurify": "empty:",
+[2025-05-12 19:14:24]         "urijs": "empty:",
+[2025-05-12 19:14:24]         "redux": "empty:",
+[2025-05-12 19:14:24]         "redux-thunk": "empty:",
+[2025-05-12 19:14:24]         "jsondiff": "empty:",
+[2025-05-12 19:14:24]         "empty": "empty:",
+[2025-05-12 19:14:24]         "web-vitals": "empty:",
+[2025-05-12 19:14:24]         "replace-css-url": "empty:",
+[2025-05-12 19:14:24]         "browser-bunyan": "empty:",
+[2025-05-12 19:14:24]         "opt": "empty:",
+[2025-05-12 19:14:24]         "pako": "empty:",
+[2025-05-12 19:14:24]         "plugins": "empty:",
+[2025-05-12 19:14:24]         "tti-polyfill": "empty:",
+[2025-05-12 19:14:24]         "vbVersions": "empty:",
+[2025-05-12 19:14:24]         "trace": "empty:",
+[2025-05-12 19:14:24]         "zonejs": "empty:"
+[2025-05-12 19:14:24]     },
+[2025-05-12 19:14:24]     "map": {},
+[2025-05-12 19:14:24]     "dir": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1/version_1747077258656",
+[2025-05-12 19:14:24]     "allowSourceOverwrites": true,
+[2025-05-12 19:14:24]     "keepBuildDir": true,
+[2025-05-12 19:14:24]     "bundlesConfigOutFile": "bundles/_generated_config.js",
+[2025-05-12 19:14:24]     "modules": [
+[2025-05-12 19:14:24]         {
+[2025-05-12 19:14:24]             "_bundleId": "vb-app-bundle",
+[2025-05-12 19:14:24]             "name": "bundles/vb-app-bundle",
+[2025-05-12 19:14:24]             "create": true,
+[2025-05-12 19:14:24]             "include": [
+[2025-05-12 19:14:24]                 "app-flow",
+[2025-05-12 19:14:24]                 "text!app-flow.json",
+[2025-05-12 19:14:24]                 "chains/initCurrentTheme",
+[2025-05-12 19:14:24]                 "chains/resourceChangedHandler",
+[2025-05-12 19:14:24]                 "chains/themeChangeHandler",
+[2025-05-12 19:14:24]                 "chains/toggleDrawerHandler",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/context.json",
+[2025-05-12 19:14:24]                 "dynamicLayouts/temp3/get-ex-data-combined/data-description-overlay",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/data-description-overlay.json",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/layout.html",
+[2025-05-12 19:14:24]                 "dynamicLayouts/temp3/get-ex-data-combined/layout",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/layout.json",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/metadata-rules.json",
+[2025-05-12 19:14:24]                 "flows/main/main-flow",
+[2025-05-12 19:14:24]                 "text!flows/main/main-flow.json",
+[2025-05-12 19:14:24]                 "text!flows/main/pages/main-start-page.html",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page",
+[2025-05-12 19:14:24]                 "text!flows/main/pages/main-start-page.json",
+[2025-05-12 19:14:24]                 "text!fragments/page-header/page-header-fragment.html",
+[2025-05-12 19:14:24]                 "fragments/page-header/page-header-fragment",
+[2025-05-12 19:14:24]                 "text!fragments/page-header/page-header-fragment.json",
+[2025-05-12 19:14:24]                 "fragments/shell-footer/chains/openAboutDialog",
+[2025-05-12 19:14:24]                 "text!fragments/shell-footer/shell-footer-fragment.html",
+[2025-05-12 19:14:24]                 "fragments/shell-footer/shell-footer-fragment",
+[2025-05-12 19:14:24]                 "text!fragments/shell-footer/shell-footer-fragment.json",
+[2025-05-12 19:14:24]                 "fragments/shell-header/chains/avatarMenuActionChain",
+[2025-05-12 19:14:24]                 "text!fragments/shell-header/shell-header-fragment.html",
+[2025-05-12 19:14:24]                 "fragments/shell-header/shell-header-fragment",
+[2025-05-12 19:14:24]                 "text!fragments/shell-header/shell-header-fragment.json",
+[2025-05-12 19:14:24]                 "pages/shell-page-chains/closeNotificationHandler",
+[2025-05-12 19:14:24]                 "pages/shell-page-chains/showNotification",
+[2025-05-12 19:14:24]                 "text!pages/shell-page.html",
+[2025-05-12 19:14:24]                 "pages/shell-page",
+[2025-05-12 19:14:24]                 "text!pages/shell-page.json",
+[2025-05-12 19:14:24]                 "text!resources/css/app.css",
+[2025-05-12 19:14:24]                 "text!resources/css/shell.css",
+[2025-05-12 19:14:24]                 "resources/strings/app/nls/app-strings",
+[2025-05-12 19:14:24]                 "resources/strings/app/nls/root/app-strings",
+[2025-05-12 19:14:24]                 "text!services/Currency Data/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/Exchange Value/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/Exchange Value Data/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/Exchange_Value_service/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/apexCloudExchangeDataService/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/catalog.json",
+[2025-05-12 19:14:24]                 "text!settings/dependencies.json"
+[2025-05-12 19:14:24]             ],
+[2025-05-12 19:14:24]             "exclude": [
+[2025-05-12 19:14:24]                 "text",
+[2025-05-12 19:14:24]                 "css",
+[2025-05-12 19:14:24]                 "ojcss",
+[2025-05-12 19:14:24]                 "css-builder",
+[2025-05-12 19:14:24]                 "normalize",
+[2025-05-12 19:14:24]                 "ojL10n"
+[2025-05-12 19:14:24]             ]
+[2025-05-12 19:14:24]         }
+[2025-05-12 19:14:24]     ],
+[2025-05-12 19:14:24]     "siteRoot": "../"
+[2025-05-12 19:14:24] }
+[2025-05-12 19:14:24] [optimizer grunt task] generating requirejs bundles
+[2025-05-12 19:14:24] [optimizer grunt task] deleted optimizer trash files from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1/version_1747077258656
+[2025-05-12 19:14:24] [optimizer grunt task] Created requirejs bundles manifest "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/vb-require-bundle.manifest.json"
+[2025-05-12 19:14:24] [optimizer grunt task] Added requirejs initializer to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1/index.html
+[2025-05-12 19:14:24] [optimizer grunt task] Moved requirejs#bundles|paths|map static entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1/version_1747077258656/app-flow.json into index.html requirejs initializer script
+[2025-05-12 19:14:24] [optimizer grunt task] project optimization finished /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1
+[2025-05-12 19:14:24] [optimizer grunt task] application in "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1" optimized.
+[2025-05-12 19:14:24] [optimizer grunt task] forceOptimize: true
+[2025-05-12 19:14:24] [optimizer grunt task] optimizerConfig: {
+[2025-05-12 19:14:24]     "moduleSourceRelativePath": "webApps/reports",
+[2025-05-12 19:14:24]     "assetsPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports",
+[2025-05-12 19:14:24]     "assetsRootPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized",
+[2025-05-12 19:14:24]     "buildPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build",
+[2025-05-12 19:14:24]     "emptyPaths": [],
+[2025-05-12 19:14:24]     "excludes": [],
+[2025-05-12 19:14:24]     "logger": {
+[2025-05-12 19:14:24]         "level": 2
+[2025-05-12 19:14:24]     },
+[2025-05-12 19:14:24]     "logRecordBuilder": {
+[2025-05-12 19:14:24]         "_source": "optimizer grunt task",
+[2025-05-12 19:14:24]         "_message": "forceOptimize: true",
+[2025-05-12 19:14:24]         "_level": 2
+[2025-05-12 19:14:24]     },
+[2025-05-12 19:14:24]     "files": {},
+[2025-05-12 19:14:24]     "network": {}
+[2025-05-12 19:14:24] }
+[2025-05-12 19:14:24] [optimizer grunt task] optimizing project in /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/jet/17.1.2/default/js/debug/ojL10n.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojL10n.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/jet/17.1.2/default/js/debug/ojcss.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojcss.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/text.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/text.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/css.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/css-builder.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css-builder.js
+[2025-05-12 19:14:24] [optimizer grunt task] copied /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/node_modules/@oracle/grunt-vb-build/lib2/resources/requirejs-plugins/normalize.js to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/normalize.js
+[2025-05-12 19:14:24] [optimizer grunt task] esprima version 5.7.1 installed into requirejs
+[2025-05-12 19:14:24] [optimizer grunt task] using default bundles configuration
+[2025-05-12 19:14:24] [optimizer grunt task] bundles configuration: {
+[2025-05-12 19:14:24]     "vb-app-bundle": {
+[2025-05-12 19:14:24]         "modules": {
+[2025-05-12 19:14:24]             "find": [
+[2025-05-12 19:14:24]                 ".*(\\.(js|json|html|css))$"
+[2025-05-12 19:14:24]             ]
+[2025-05-12 19:14:24]         }
+[2025-05-12 19:14:24]     }
+[2025-05-12 19:14:24] }
+[2025-05-12 19:14:24] [optimizer grunt task] enforcing text plugin for imported stylesheet resources/css/app.css
+[2025-05-12 19:14:24] [optimizer grunt task] enforcing text plugin for imported stylesheet resources/css/shell.css
+[2025-05-12 19:14:24] [optimizer grunt task] Optimizer config: {
+[2025-05-12 19:14:24]     "baseUrl": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports/version_1747077258656",
+[2025-05-12 19:14:24]     "optimize": "none",
+[2025-05-12 19:14:24]     "generateSourceMaps": true,
+[2025-05-12 19:14:24]     "paths": {
+[2025-05-12 19:14:24]         "ojL10n": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojL10n",
+[2025-05-12 19:14:24]         "ojcss": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/ojcss",
+[2025-05-12 19:14:24]         "text": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/text",
+[2025-05-12 19:14:24]         "css": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css",
+[2025-05-12 19:14:24]         "css-builder": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/css-builder",
+[2025-05-12 19:14:24]         "normalize": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/normalize",
+[2025-05-12 19:14:24]         "jqueryui-amd": "empty:",
+[2025-05-12 19:14:24]         "oj-c": "empty:",
+[2025-05-12 19:14:24]         "ojs": "empty:",
+[2025-05-12 19:14:24]         "ojtranslations": "empty:",
+[2025-05-12 19:14:24]         "proj4": "empty:",
+[2025-05-12 19:14:24]         "persist": "empty:",
+[2025-05-12 19:14:24]         "knockout": "empty:",
+[2025-05-12 19:14:24]         "jquery": "empty:",
+[2025-05-12 19:14:24]         "signals": "empty:",
+[2025-05-12 19:14:24]         "hammerjs": "empty:",
+[2025-05-12 19:14:24]         "ojdnd": "empty:",
+[2025-05-12 19:14:24]         "pouchdb": "empty:",
+[2025-05-12 19:14:24]         "preact": "empty:",
+[2025-05-12 19:14:24]         "touchr": "empty:",
+[2025-05-12 19:14:24]         "vb": "empty:",
+[2025-05-12 19:14:24]         "vbc": "empty:",
+[2025-05-12 19:14:24]         "vbsw": "empty:",
+[2025-05-12 19:14:24]         "acorn": "empty:",
+[2025-05-12 19:14:24]         "acorn-walk": "empty:",
+[2025-05-12 19:14:24]         "boss": "empty:",
+[2025-05-12 19:14:24]         "customElements": "empty:",
+[2025-05-12 19:14:24]         "dompurify": "empty:",
+[2025-05-12 19:14:24]         "urijs": "empty:",
+[2025-05-12 19:14:24]         "redux": "empty:",
+[2025-05-12 19:14:24]         "redux-thunk": "empty:",
+[2025-05-12 19:14:24]         "jsondiff": "empty:",
+[2025-05-12 19:14:24]         "empty": "empty:",
+[2025-05-12 19:14:24]         "web-vitals": "empty:",
+[2025-05-12 19:14:24]         "replace-css-url": "empty:",
+[2025-05-12 19:14:24]         "browser-bunyan": "empty:",
+[2025-05-12 19:14:24]         "opt": "empty:",
+[2025-05-12 19:14:24]         "pako": "empty:",
+[2025-05-12 19:14:24]         "plugins": "empty:",
+[2025-05-12 19:14:24]         "tti-polyfill": "empty:",
+[2025-05-12 19:14:24]         "vbVersions": "empty:",
+[2025-05-12 19:14:24]         "trace": "empty:",
+[2025-05-12 19:14:24]         "zonejs": "empty:",
+[2025-05-12 19:14:24]         "oj-dyn": "empty:",
+[2025-05-12 19:14:24]         "oj-dynamic": "empty:"
+[2025-05-12 19:14:24]     },
+[2025-05-12 19:14:24]     "map": {},
+[2025-05-12 19:14:24]     "dir": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports/version_1747077258656",
+[2025-05-12 19:14:24]     "allowSourceOverwrites": true,
+[2025-05-12 19:14:24]     "keepBuildDir": true,
+[2025-05-12 19:14:24]     "bundlesConfigOutFile": "bundles/_generated_config.js",
+[2025-05-12 19:14:24]     "modules": [
+[2025-05-12 19:14:24]         {
+[2025-05-12 19:14:24]             "_bundleId": "vb-app-bundle",
+[2025-05-12 19:14:24]             "name": "bundles/vb-app-bundle",
+[2025-05-12 19:14:24]             "create": true,
+[2025-05-12 19:14:24]             "include": [
+[2025-05-12 19:14:24]                 "app-flow",
+[2025-05-12 19:14:24]                 "text!app-flow.json",
+[2025-05-12 19:14:24]                 "chains/initCurrentTheme",
+[2025-05-12 19:14:24]                 "chains/resourceChangedHandler",
+[2025-05-12 19:14:24]                 "chains/themeChangeHandler",
+[2025-05-12 19:14:24]                 "chains/toggleDrawerHandler",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/context.json",
+[2025-05-12 19:14:24]                 "dynamicLayouts/temp3/get-ex-data-combined/data-description-overlay",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/data-description-overlay.json",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/layout.html",
+[2025-05-12 19:14:24]                 "dynamicLayouts/temp3/get-ex-data-combined/layout",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/layout.json",
+[2025-05-12 19:14:24]                 "text!dynamicLayouts/temp3/get-ex-data-combined/metadata-rules.json",
+[2025-05-12 19:14:24]                 "flows/main/main-flow",
+[2025-05-12 19:14:24]                 "text!flows/main/main-flow.json",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page-chains/FromCurrency_ComboValueChangeChain",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page-chains/FromValue_InputNumberValueChangeChain",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page-chains/ToCurrency_ComboValueChangeChain",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page-chains/ToValue_InputNumberValueChangeChain",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page-chains/vbEnterListener",
+[2025-05-12 19:14:24]                 "text!flows/main/pages/main-start-page-template.html",
+[2025-05-12 19:14:24]                 "text!flows/main/pages/main-start-page.html",
+[2025-05-12 19:14:24]                 "flows/main/pages/main-start-page",
+[2025-05-12 19:14:24]                 "text!flows/main/pages/main-start-page.json",
+[2025-05-12 19:14:24]                 "text!fragments/page-header/page-header-fragment.html",
+[2025-05-12 19:14:24]                 "fragments/page-header/page-header-fragment",
+[2025-05-12 19:14:24]                 "text!fragments/page-header/page-header-fragment.json",
+[2025-05-12 19:14:24]                 "pages/shell-page-chains/closeNotificationHandler",
+[2025-05-12 19:14:24]                 "pages/shell-page-chains/showNotification",
+[2025-05-12 19:14:24]                 "text!pages/shell-page.html",
+[2025-05-12 19:14:24]                 "pages/shell-page",
+[2025-05-12 19:14:24]                 "text!pages/shell-page.json",
+[2025-05-12 19:14:24]                 "text!resources/css/app.css",
+[2025-05-12 19:14:24]                 "text!resources/css/shell.css",
+[2025-05-12 19:14:24]                 "resources/strings/app/nls/app-strings",
+[2025-05-12 19:14:24]                 "resources/strings/app/nls/root/app-strings",
+[2025-05-12 19:14:24]                 "text!services/Currency Data/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/Exchange Value/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/Exchange Value Data/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/Exchange_Value_service/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/apexCloudExchangeDataService/openapi3.json",
+[2025-05-12 19:14:24]                 "text!services/catalog.json",
+[2025-05-12 19:14:24]                 "text!settings/dependencies.json"
+[2025-05-12 19:14:24]             ],
+[2025-05-12 19:14:24]             "exclude": [
+[2025-05-12 19:14:24]                 "text",
+[2025-05-12 19:14:24]                 "css",
+[2025-05-12 19:14:24]                 "ojcss",
+[2025-05-12 19:14:24]                 "css-builder",
+[2025-05-12 19:14:24]                 "normalize",
+[2025-05-12 19:14:24]                 "ojL10n"
+[2025-05-12 19:14:24]             ]
+[2025-05-12 19:14:24]         }
+[2025-05-12 19:14:24]     ],
+[2025-05-12 19:14:24]     "siteRoot": "../"
+[2025-05-12 19:14:24] }
+[2025-05-12 19:14:24] [optimizer grunt task] generating requirejs bundles
+[2025-05-12 19:14:25] [optimizer grunt task] deleted optimizer trash files from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports/version_1747077258656
+[2025-05-12 19:14:25] [optimizer grunt task] Created requirejs bundles manifest "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/vb-require-bundle.manifest.json"
+[2025-05-12 19:14:25] [optimizer grunt task] Added requirejs initializer to /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports/index.html
+[2025-05-12 19:14:25] [optimizer grunt task] Moved requirejs#bundles|paths|map static entries from /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports/version_1747077258656/app-flow.json into index.html requirejs initializer script
+[2025-05-12 19:14:25] [optimizer grunt task] project optimization finished /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports
+[2025-05-12 19:14:25] [optimizer grunt task] application in "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports" optimized.
+[2025-05-12 19:14:25] Running "vb-optimize-cdn-configuration" task
+[2025-05-12 19:14:25] Running "vb-optimize-cdn:webApps/dev1" (vb-optimize-cdn) task
+[2025-05-12 19:14:25] Running "vb-optimize-cdn:webApps/reports" (vb-optimize-cdn) task
+[2025-05-12 19:14:25] Running "_vb-transpile" task
+[2025-05-12 19:14:25] [transpile grunt task] transpilerOptions: {
+[2025-05-12 19:14:25]     "moduleSourceRelativePath": "webApps/dev1",
+[2025-05-12 19:14:25]     "assetsPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1",
+[2025-05-12 19:14:25]     "assetsRootPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized",
+[2025-05-12 19:14:25]     "buildPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build",
+[2025-05-12 19:14:25]     "sourcesPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace"
+[2025-05-12 19:14:25] }
+[2025-05-12 19:14:25] [transpile grunt task] Babel config: {
+[2025-05-12 19:14:25]     "comments": false,
+[2025-05-12 19:14:25]     "passPerPreset": true,
+[2025-05-12 19:14:25]     "sourceMap": true,
+[2025-05-12 19:14:25]     "presets": [
+[2025-05-12 19:14:25]         [
+[2025-05-12 19:14:25]             "@babel/preset-env",
+[2025-05-12 19:14:25]             {
+[2025-05-12 19:14:25]                 "targets": {
+[2025-05-12 19:14:25]                     "browsers": [
+[2025-05-12 19:14:25]                         "last 2 chrome major versions",
+[2025-05-12 19:14:25]                         "last 2 safari major versions",
+[2025-05-12 19:14:25]                         "last 2 ios major versions",
+[2025-05-12 19:14:25]                         "last 2 firefox major versions",
+[2025-05-12 19:14:25]                         "last 2 edge major versions"
+[2025-05-12 19:14:25]                     ]
+[2025-05-12 19:14:25]                 }
+[2025-05-12 19:14:25]             }
+[2025-05-12 19:14:25]         ],
+[2025-05-12 19:14:25]         [
+[2025-05-12 19:14:25]             "minify",
+[2025-05-12 19:14:25]             {
+[2025-05-12 19:14:25]                 "builtIns": false,
+[2025-05-12 19:14:25]                 "mangle": false
+[2025-05-12 19:14:25]             }
+[2025-05-12 19:14:25]         ]
+[2025-05-12 19:14:25]     ]
+[2025-05-12 19:14:25] }
+[2025-05-12 19:14:25] [transpile grunt task] transpiling 20 resources
+[2025-05-12 19:14:25] [transpile grunt task] transpilation finished in 0.257 seconds.
+[2025-05-12 19:14:25] [transpile grunt task] transpilerOptions: {
+[2025-05-12 19:14:25]     "moduleSourceRelativePath": "webApps/reports",
+[2025-05-12 19:14:25]     "assetsPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports",
+[2025-05-12 19:14:25]     "assetsRootPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized",
+[2025-05-12 19:14:25]     "buildPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build",
+[2025-05-12 19:14:25]     "sourcesPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace"
+[2025-05-12 19:14:25] }
+[2025-05-12 19:14:25] [transpile grunt task] Babel config: {
+[2025-05-12 19:14:25]     "comments": false,
+[2025-05-12 19:14:25]     "passPerPreset": true,
+[2025-05-12 19:14:25]     "sourceMap": true,
+[2025-05-12 19:14:25]     "presets": [
+[2025-05-12 19:14:25]         [
+[2025-05-12 19:14:25]             "@babel/preset-env",
+[2025-05-12 19:14:25]             {
+[2025-05-12 19:14:25]                 "targets": {
+[2025-05-12 19:14:25]                     "browsers": [
+[2025-05-12 19:14:25]                         "last 2 chrome major versions",
+[2025-05-12 19:14:25]                         "last 2 safari major versions",
+[2025-05-12 19:14:25]                         "last 2 ios major versions",
+[2025-05-12 19:14:25]                         "last 2 firefox major versions",
+[2025-05-12 19:14:25]                         "last 2 edge major versions"
+[2025-05-12 19:14:25]                     ]
+[2025-05-12 19:14:25]                 }
+[2025-05-12 19:14:25]             }
+[2025-05-12 19:14:25]         ],
+[2025-05-12 19:14:25]         [
+[2025-05-12 19:14:25]             "minify",
+[2025-05-12 19:14:25]             {
+[2025-05-12 19:14:25]                 "builtIns": false,
+[2025-05-12 19:14:25]                 "mangle": false
+[2025-05-12 19:14:25]             }
+[2025-05-12 19:14:25]         ]
+[2025-05-12 19:14:25]     ]
+[2025-05-12 19:14:25] }
+[2025-05-12 19:14:25] [transpile grunt task] transpiling 21 resources
+[2025-05-12 19:14:25] [transpile grunt task] transpilation finished in 0.119 seconds.
+[2025-05-12 19:14:25] Running "vb-manifest" task
+[2025-05-12 19:14:25] [manifest grunt task] manifestsOptions: {
+[2025-05-12 19:14:25]     "moduleSourceRelativePath": "webApps/dev1",
+[2025-05-12 19:14:25]     "assetsPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1",
+[2025-05-12 19:14:25]     "assetsRootPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized",
+[2025-05-12 19:14:25]     "buildPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build"
+[2025-05-12 19:14:25] }
+[2025-05-12 19:14:25] [manifest grunt task] build application manifest updated: /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/dev1/build-info.json
+[2025-05-12 19:14:25] [manifest grunt task] manifestsOptions: {
+[2025-05-12 19:14:25]     "moduleSourceRelativePath": "webApps/reports",
+[2025-05-12 19:14:25]     "assetsPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports",
+[2025-05-12 19:14:25]     "assetsRootPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized",
+[2025-05-12 19:14:25]     "buildPath": "/data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build"
+[2025-05-12 19:14:25] }
+[2025-05-12 19:14:25] [manifest grunt task] build application manifest updated: /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/webApps/reports/build-info.json
+[2025-05-12 19:14:25] [manifest grunt task] build project manifest updated: /data/cibuild/8c44e31c-4e54-4eed-b775-12893fb2d823/workspace/build/optimized/build-info.json
+[2025-05-12 19:14:25] Running "vb-pwa" task
+[2025-05-12 19:14:25] Running "_vb-pwa:webApps/dev1" (_vb-pwa) task
+[2025-05-12 19:14:25] Running "_vb-pwa-application:webApps/dev1" (_vb-pwa-application) task
+[2025-05-12 19:14:25] [vb-pwa] noop - not PWA enabled web application
+[2025-05-12 19:14:25] Running "_vb-pwa:webApps/reports" (_vb-pwa) task
+[2025-05-12 19:14:25] Running "_vb-pwa-application:webApps/reports" (_vb-pwa-application) task
+[2025-05-12 19:14:25] [vb-pwa] noop - not PWA enabled web application
+[2025-05-12 19:14:25] Running "vb-archive:optimized" (vb-archive_esm_bridge_inactive_wrapper) task
+[2025-05-12 19:14:25] runTask vb-archive
+[2025-05-12 19:14:25] Running "vb-archive:optimized" (vb-archive) task
+[2025-05-12 19:14:25] Running "compress:optimized-archive" (compress) task
+[2025-05-12 19:14:25] >> Compressed 249 files.
+[2025-05-12 19:14:25] Done.
+[2025-05-12 19:14:25] Execution Time (2025-05-12 19:14:22 UTC-0)
+[2025-05-12 19:14:25] loading tasks                  65ms  ▇ 2%
+[2025-05-12 19:14:25] compress:sources               2.3s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 67%
+[2025-05-12 19:14:25] copy:processe...sToOptimized   61ms  ▇ 2%
+[2025-05-12 19:14:25] vb-css-minify                  41ms  ▇ 1%
+[2025-05-12 19:14:25] vb-json-minify                 62ms  ▇ 2%
+[2025-05-12 19:14:25] vb-require-bundle             270ms  ▇▇▇ 8%
+[2025-05-12 19:14:25] _vb-transpile                 388ms  ▇▇▇▇ 11%
+[2025-05-12 19:14:25] compress:optimized-archive    197ms  ▇▇ 6%
+[2025-05-12 19:14:25] Total 3.4s
+[2025-05-12 19:14:25] END shell script execution
+[2025-05-12 19:14:25] === End Visual Application Packaging Execution ===
+[2025-05-12 19:14:27] Following artifacts are archived:
+[2025-05-12 19:14:27]   -->  build/sources.zip
+[2025-05-12 19:14:27]   -->  build/built-assets.zip
+Build log size 89 KB (88,976)
+[2025-05-12 19:14:29] 
+[2025-05-12 19:14:29] Build completed.
+[2025-05-12 19:14:29] Status: DONE Result: SUCCESSFUL Duration: 46 sec

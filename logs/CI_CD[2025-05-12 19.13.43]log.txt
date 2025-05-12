@@ -1,0 +1,5 @@
+[2025-05-12 19:13:43] Started by job dev_package build #2 (BUILDING} which was initiated by SCM
+[2025-05-12 19:14:29] Job [dev_package] finished build #2 (SUCCESSFUL}
+[2025-05-12 19:14:29] Build of job [dev_deploy] scheduled.
+[2025-05-12 19:15:17] Job [dev_deploy] finished build #1 (SUCCESSFUL}
+[2025-05-12 19:15:17] Pipeline end. Run time 1 min 34 sec
